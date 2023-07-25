@@ -4,6 +4,8 @@ import NavbarActions from "@/components/NavbarActions";
 import Container from "@/components/ui/Container";
 import Link from "next/link";
 
+export const revalidate = 0;
+
 const Navbar = async () => {
   const categories = await getCategories();
 
